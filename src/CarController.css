@@ -1,0 +1,190 @@
+.car-controller {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Gradient background */
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.car-controller h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 24px;
+  color: #333; /* Darker text for better contrast */
+}
+
+.direction-display {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  padding: 10px;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Gradient background */
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  color: #007bff; /* Blue text for direction */
+}
+
+.car-main-controller {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Speed Control */
+.speed-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Gradient background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.vertical-slider {
+  appearance: slider-vertical;
+  writing-mode: bt-lr;
+  width: 10px;
+  height: 150px;
+  transform: rotate(180deg);
+}
+
+/* Direction Control Box */
+.direction-box {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Gradient background */
+  padding: 20px;
+  border-radius: 80px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.middle-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Buttons */
+.control-btn {
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient button */
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.control-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f); /* Darker gradient on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Status Container */
+.status-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Gradient background */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.status-container p {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555; /* Darker text for better contrast */
+}
+
+/* Responsive Font Size for Smaller Screens */
+@media (max-width: 480px) {
+  .status-container p {
+    font-size: 14px;
+  }
+
+  .status-container {
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+
+
+/* Battery Icon */
+.status-container .battery-icon {
+  color: #4caf50; /* Green color for battery */
+}
+
+/* Stop Button */
+.stop-btn {
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 100px;
+  transition: 0.3s;
+  background: linear-gradient(135deg, #dc3545, #b02a37);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.stop-btn:hover {
+  background: linear-gradient(135deg, #b02a37, #8c222d); /* Darker gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Battery Display */
+.battery-status{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #4caf50, #388e3c); 
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Horn, Battery & Headlights */
+.headlights-control, .horn-control{
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+  background: linear-gradient(135deg, #ff5722, #e64a19); /* Gradient button */
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
